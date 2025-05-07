@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "eb9491e7-dac9-4287-af74-92829e97e6dd",
+		"name": "prueba tecnica back",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26595404",
+		"_collection_link": "https://grey-satellite-729932.postman.co/workspace/Semillero~3090c8d5-1f8c-41a2-8eaf-ceb5e32b1a07/collection/26595404-eb9491e7-dac9-4287-af74-92829e97e6dd?action=share&source=collection_link&creator=26595404"
+	},
+	"item": [
+		{
+			"name": "getEmployees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5171/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5171",
+					"path": [
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createEmployees",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"FirstName\": \"fernando\",\r\n    \"LastName\": \"herrera\",\r\n    \"Email\": \"yeilerTest@gmail.com\",\r\n    \"Phone\": \"3005199147\",\r\n    \"HireDate\":\"2025-05-06\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5171/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5171",
+					"path": [
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteEmployees",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5171/employees/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5171",
+					"path": [
+						"employees",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateEmployee",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"FirstName\": \"juan\",\r\n    \"LastName\": \"avila\",\r\n    \"Email\": \"corona@gmail.com\",\r\n    \"Phone\": \"3005199147\",\r\n    \"HireDate\":\"2025-05-07\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5171/employees/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5171",
+					"path": [
+						"employees",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllAfterContract",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"request\": \"2025-05-07\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5171/employees/getAllAfterContract",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5171",
+					"path": [
+						"employees",
+						"getAllAfterContract"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
